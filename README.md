@@ -252,3 +252,131 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 ````
 Press `esc` and `:wq` to save.
+
+Type 
+```bash
+cd ..
+```
+and then
+
+```bash
+sphinx-apidoc -o source/ ../ --force
+
+```
+This command will generate `.rst` files in the `source` folder, one for each Python module, including an index file `(modules.rst)` that lists all the modules.
+
+Now we are nearly done.
+Type:
+
+```bash
+cd source
+```
+type 
+```bash
+vi index.rst
+```
+And this will look like
+```bash
+.. Documenting Python Code with Sphinux documentation master file, created by
+   sphinx-quickstart on Mon Jan 27 15:39:35 2025.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Documenting Python Code with Sphinux documentation
+==================================================
+
+Add your content using ``reStructuredText`` syntax. See the
+`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
+documentation for details.
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   
+
+```
+Press `esc` `a ` to edit.
+Type `modules` at the end like this:
+```bash
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+   modules
+
+```
+And Press `esc` and `:wq` to save.
+Next:
+```bash
+cd ..
+```
+```bash
+make html
+
+````
+The following text will appear:
+```bash
+Running Sphinx v7.4.7
+loading translations [English]... not available for built-in messages
+/Users/baijayantabhattacharyya/myenv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 1 source files that are out of date
+updating environment: 0 added, 1 changed, 0 removed
+reading sources... [100%] index
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+copying assets... 
+copying static files... done
+copying extra files... done
+copying assets: done
+writing output... [100%] index
+generating indices... genindex py-modindex done
+writing additional pages... search done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded.
+
+The HTML pages are in build/html.
+```
+##You Have created The html file documentation of your python files
+To view the `html` file type
+```bash
+cd build/html
+```
+And Type:
+```bash
+
+open index.html
+```
+You will see a html file opening in your default browser.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
