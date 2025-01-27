@@ -67,7 +67,7 @@ pip install sphinx
 ```
 7.My working directory looks like this:
 ```bash
-Sphinux_Tutorial/
+Sphinx_Tutorial/
 
 ```
 8.Add the files you want to document.
@@ -75,7 +75,7 @@ My case Files are `add.py`,`subtract.py`,`multiply.py`.
 After this my directory structure is:
 
 ```bash
-Sphinux_Tutorial/
+Sphinx_Tutorial/
 ├── add.py
 ├── multiply.py
 └── subtract.py
@@ -139,10 +139,10 @@ For a list of supported codes, see
 https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
 > Project language [en]: English
 
-Creating file /Sphinux_Tutorial/docs/source/conf.py.
-Creating file /Sphinux_Tutorial/docs/source/index.rst.
-Creating file /Sphinux_Tutorial/docs/Makefile.
-Creating file /Sphinux_Tutorial/docs/make.bat.
+Creating file /Sphinx_Tutorial/docs/source/conf.py.
+Creating file /Sphinx_Tutorial/docs/source/index.rst.
+Creating file /Sphinx_Tutorial/docs/Makefile.
+Creating file /Sphinx_Tutorial/docs/make.bat.
 
 Finished: An initial directory structure has been created.
 
@@ -153,7 +153,7 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 ```
 Now the directory looks like:
 ```bash
-Sphinux_Tutorial/
+Sphinx_Tutorial/
 ├── add.py
 ├── docs
 │   ├── Makefile
@@ -365,10 +365,13 @@ open index.html
 You will see a html file opening in your default browser.
 Final Indexing is:
 ```bash
+├── .DS_Store
 ├── add.py
 ├── docs
+│   ├── .DS_Store
 │   ├── Makefile
 │   ├── build
+│   │   ├── .DS_Store
 │   │   ├── doctrees
 │   │   │   ├── add.doctree
 │   │   │   ├── environment.pickle
@@ -387,10 +390,49 @@ Final Indexing is:
 │   │       ├── _static
 │   │       │   ├── alabaster.css
 │   │       │   ├── basic.css
+│   │       │   ├── check-solid.svg
+│   │       │   ├── clipboard.min.js
+│   │       │   ├── copy-button.svg
+│   │       │   ├── copybutton.css
+│   │       │   ├── copybutton.js
+│   │       │   ├── copybutton_funcs.js
 │   │       │   ├── custom.css
+│   │       │   ├── dist
+│   │       │   │   ├── assets
+│   │       │   │   │   ├── fa-brands-400.eot
+│   │       │   │   │   ├── fa-brands-400.svg
+│   │       │   │   │   ├── fa-brands-400.ttf
+│   │       │   │   │   ├── fa-brands-400.woff
+│   │       │   │   │   ├── fa-brands-400.woff2
+│   │       │   │   │   ├── fa-regular-400.eot
+│   │       │   │   │   ├── fa-regular-400.svg
+│   │       │   │   │   ├── fa-regular-400.ttf
+│   │       │   │   │   ├── fa-regular-400.woff
+│   │       │   │   │   ├── fa-regular-400.woff2
+│   │       │   │   │   ├── fa-solid-900.eot
+│   │       │   │   │   ├── fa-solid-900.svg
+│   │       │   │   │   ├── fa-solid-900.ttf
+│   │       │   │   │   ├── fa-solid-900.woff
+│   │       │   │   │   └── fa-solid-900.woff2
+│   │       │   │   ├── blocking.js
+│   │       │   │   ├── blocking.js.map
+│   │       │   │   ├── fontawesome.css
+│   │       │   │   ├── fontawesome.css.map
+│   │       │   │   ├── fontawesome.js
+│   │       │   │   ├── theme.css
+│   │       │   │   ├── theme.css.map
+│   │       │   │   ├── theme.js
+│   │       │   │   ├── theme.js.map
+│   │       │   │   ├── vendor.js
+│   │       │   │   ├── vendor.js.LICENSE.txt
+│   │       │   │   └── vendor.js.map
 │   │       │   ├── doctools.js
 │   │       │   ├── documentation_options.js
 │   │       │   ├── file.png
+│   │       │   ├── img
+│   │       │   │   ├── screenshot.png
+│   │       │   │   ├── wagtail-logo-circle.svg
+│   │       │   │   └── wagtail-logo.svg
 │   │       │   ├── language_data.js
 │   │       │   ├── minus.png
 │   │       │   ├── plus.png
@@ -409,6 +451,7 @@ Final Indexing is:
 │   │       └── subtract.html
 │   ├── make.bat
 │   └── source
+│       ├── .DS_Store
 │       ├── _static
 │       ├── _templates
 │       ├── add.rst
