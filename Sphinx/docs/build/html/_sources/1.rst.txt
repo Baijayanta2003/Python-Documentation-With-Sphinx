@@ -1,7 +1,0 @@
-1.py module
-========
-
-.. automodule:: 1
-   :members:
-   :undoc-members:
-   :show-inheritance:
