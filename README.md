@@ -489,6 +489,25 @@ extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','sphinx.ext.viewcode']
 ```
 You can also add `'sphinx.ext.mathjax'` in the extensions list to support latex math equations.
 
+If you want to make a pdf or latex file you first have to install the `latex` support.
+
+#Latex Or Pdf Support:
+
+First run the following command in the terminal while activating the virtual environment:
+
+-for linux users type:
+```bash
+sudo apt-get install texlive-full
+
+
+```
+-for macos users type:
+```bash
+brew install --cask mactex
+
+```
+-for Windows users Download and install MiKTeX or TeX Live.
+
 
 
 
