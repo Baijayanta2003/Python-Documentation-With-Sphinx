@@ -1,31 +1,32 @@
 ## Python-Documentation-With-Sphinx
-In this I will guide you step by step how to *make* documentation for your python codes and make them in different format and make html or pdf or tex files.
+In this I will guide you step by step how to *make* documentation for your python codes and how to produce them in different formats like html or pdf or tex files.
 
 ## Here are the steps:
 
-1.First install a virtual environment using the command in your terminal command
+1.First set up a virtual environment by typing the following command in your terminal :
 
 ```bash
 python -m venv myenv
 
 ```
-You can write thing instead of myenv. This can create a directiory where your virtual environment will be.
+You can write thing instead of myenv. This will create a directiory where your virtual environment will be.
 
-After installing write in command prompt or terminal
+After installing type in command prompt or terminal
 ```bash
 pwd
 
 ```
-You will see a directory address printed on window.
-This is the directory you have installed the virtual environment.
+You will see a directory address printed on the window.
 
-2.Activate the virtual environment.
+This is the directory where you have installed the virtual environment.**(Remember IT)**
+
+2.Now activate the virtual environment using:
 
 ```bash
  source myenv/bin/activate
 ```
 
-After that you will see a line `After activation, you should see (myenv) in your command prompt`.
+`After activation, you should see (myenv) in your command prompt`.
 
 3.Once the virtual environment is activated, you can install packages using `pip`:
 ```bash
