@@ -17,12 +17,14 @@ you can write thing instead of myenv.This can create a directiory where your vir
  source myenv/bin/activate
 ```
 
-after that you will see a line `After activation, you should see (myenv) in your command prompt`
+after that you will see a line `After activation, you should see (myenv) in your command prompt`.
+
 4.Once the virtual environment is activated, you can install packages using `pip`:
 ```bash
 pip install <package_name>
 ```
 install all the packages you need.
+
 5.To deactiavte the virtual environment type
 ```bash
 deactivate
