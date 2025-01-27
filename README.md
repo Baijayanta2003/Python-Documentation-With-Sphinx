@@ -498,8 +498,6 @@ First run the following command in the terminal while activating the virtual env
 -for linux users type:
 ```bash
 sudo apt-get install texlive-full
-
-
 ```
 -for macos users type:
 ```bash
@@ -507,6 +505,15 @@ brew install --cask mactex
 
 ```
 -for Windows users Download and install MiKTeX or TeX Live.
+# Now
+Run this command in the `docs` folder:
+```bash
+
+make latexpdf
+
+```
+The PDF will be located in `/docs/build/latex/.`
+
 
 
 
