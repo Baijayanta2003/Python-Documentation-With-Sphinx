@@ -39,13 +39,13 @@ install all the packages you need.
 deactivate
 ```
 viola you have successfully installed used and exited the virtual environment.
-\\
+
 
 5.Now get back to work.
 
 Activate the virtual environment myenv by step `2`.
 
-Then navigate to the directory (In my case I have a folder named `Sphinux_Tutorial` where my python scripts are located) 
+Then navigate to the directory (In my case I have a folder named `Sphinx_Tutorial` where my python scripts are located) 
 
 where the python scripts are located for which you want to make the documentation for .
 
@@ -111,6 +111,7 @@ Either, you use a directory "_build" within the root path, or you separate
 
 ```
 `Type y`
+
 12.It will look like this:
 ```
 > Separate source and build directories (y/n) [n]: y
@@ -119,14 +120,14 @@ The project name will occur in several places in the built documentation.
 > Project name:
 
 ```
-Type The name of the project you wanna give,In my case it is `Documenting Python Code with Sphinux`.
+13.Type The name of the project you wanna give,In my case it is `Documenting Python Code with Sphinux`.
 After that it will look something like this:
 ```
 The project name will occur in several places in the built documentation.
 > Project name: Documenting Python Code with Sphinux
 > Author name(s):
 ```
-Type The Author name,Do the next commands and then it will look like this:
+14.Type The Author name,Do the next commands and then it will look like this:
  ```
 > Author name(s): Baijaynta Bhattacharyya
 > Project release []: '0.0.1'
@@ -151,7 +152,7 @@ source files. Use the Makefile to build the docs, like so:
    make builder
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 ```
-Now the directory looks like:
+15.Now the directory looks like:
 ```bash
 Sphinx_Tutorial/
 ├── add.py
@@ -167,14 +168,14 @@ Sphinx_Tutorial/
 ├── multiply.py
 └── subtract.py
 ```
-Now type 
+16.Now type 
 ```bash
 cd source/ 
 ```
 ```bash
 vi conf.py
 ```
-This will look like this:
+17.This will look like this:
 ```bash
 # Configuration file for the Sphinx documentation builder.
 #
@@ -206,7 +207,7 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
                                
 ```
-Press `a` or `i` to edit.
+18.Press `a` or `i` to edit.
 In this cut the `extensions = []` and paste:
 
 ```bash 
@@ -225,7 +226,7 @@ import sys
 sys.path.insert(0, os.path.abspath('../../'))  # Adjust the path if needed
 
 ```
-Finally it will look like this:
+19.Finally it will look like this:
 ```bash
 # Configuration file for the Sphinx documentation builder.
 #
@@ -270,7 +271,7 @@ and then
 sphinx-apidoc -o source/ ../ --force
 
 ```
-This command will generate `.rst` files in the `source` folder, one for each Python module, including an index file `(modules.rst)` that lists all the modules.
+20.This command will generate `.rst` files in the `source` folder, one for each Python module, including an index file `(modules.rst)` that lists all the modules.
 
 Now we are nearly done.
 Type:
@@ -323,7 +324,7 @@ cd ..
 make html
 
 ````
-The following text will appear:
+21.The following text will appear:
 ```bash
 Running Sphinx v7.4.7
 loading translations [English]... not available for built-in messages
@@ -353,7 +354,7 @@ build succeeded.
 The HTML pages are in build/html.
 ```
 ##You Have created The html file documentation of your python files
-To view the `html` file type
+22.To view the `html` file type
 ```bash
 cd build/html
 ```
@@ -362,7 +363,7 @@ And Type:
 
 open index.html
 ```
-You will see a html file opening in your default browser.
+23.You will see a html file opening in your default browser.
 Final Indexing is:
 ```bash
 ├── .DS_Store
@@ -463,7 +464,7 @@ Final Indexing is:
 ├── multiply.py
 └── subtract.py
 ```
-You can change theme of your html file in the `conf.py` file in the `source folder`.I use the theme `wagtail` which can be installed by:
+24.You can change theme of your html file in the `conf.py` file in the `source folder`.I use the theme `wagtail` which can be installed by:
 ```bash
 $ pip install sphinx-wagtail-theme
 ```
