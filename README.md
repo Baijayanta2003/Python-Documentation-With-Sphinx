@@ -356,7 +356,64 @@ And Type:
 open index.html
 ```
 You will see a html file opening in your default browser.
-
+Final Indexing is:
+```bash
+├── add.py
+├── docs
+│   ├── Makefile
+│   ├── build
+│   │   ├── doctrees
+│   │   │   ├── add.doctree
+│   │   │   ├── environment.pickle
+│   │   │   ├── index.doctree
+│   │   │   ├── modules.doctree
+│   │   │   ├── multiply.doctree
+│   │   │   └── subtract.doctree
+│   │   └── html
+│   │       ├── .buildinfo
+│   │       ├── _sources
+│   │       │   ├── add.rst.txt
+│   │       │   ├── index.rst.txt
+│   │       │   ├── modules.rst.txt
+│   │       │   ├── multiply.rst.txt
+│   │       │   └── subtract.rst.txt
+│   │       ├── _static
+│   │       │   ├── alabaster.css
+│   │       │   ├── basic.css
+│   │       │   ├── custom.css
+│   │       │   ├── doctools.js
+│   │       │   ├── documentation_options.js
+│   │       │   ├── file.png
+│   │       │   ├── language_data.js
+│   │       │   ├── minus.png
+│   │       │   ├── plus.png
+│   │       │   ├── pygments.css
+│   │       │   ├── searchtools.js
+│   │       │   └── sphinx_highlight.js
+│   │       ├── add.html
+│   │       ├── genindex.html
+│   │       ├── index.html
+│   │       ├── modules.html
+│   │       ├── multiply.html
+│   │       ├── objects.inv
+│   │       ├── py-modindex.html
+│   │       ├── search.html
+│   │       ├── searchindex.js
+│   │       └── subtract.html
+│   ├── make.bat
+│   └── source
+│       ├── _static
+│       ├── _templates
+│       ├── add.rst
+│       ├── conf.py
+│       ├── index.rst
+│       ├── modules.rst
+│       ├── multiply.rst
+│       └── subtract.rst
+├── multiply.py
+└── subtract.py
+```
+You can change theme in the `conf.py` file in the `source folder`.I defaultly use themee `nature`.
 
 
 
