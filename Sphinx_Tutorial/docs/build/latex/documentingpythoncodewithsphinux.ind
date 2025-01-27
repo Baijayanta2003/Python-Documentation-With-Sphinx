@@ -1,0 +1,28 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{add}
+    \subitem \spxentry{module}, \hyperpage{3}
+  \item \spxentry{add\_numbers()}\spxextra{in module add}, \hyperpage{3}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{module}
+    \subitem \spxentry{add}, \hyperpage{3}
+    \subitem \spxentry{multiply}, \hyperpage{4}
+    \subitem \spxentry{subtract}, \hyperpage{4}
+  \item \spxentry{multiply}
+    \subitem \spxentry{module}, \hyperpage{4}
+  \item \spxentry{multiply\_numbers()}\spxextra{in module multiply}, \hyperpage{4}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{subtract}
+    \subitem \spxentry{module}, \hyperpage{4}
+  \item \spxentry{subtract\_numbers()}\spxextra{in module subtract}, \hyperpage{4}
+
+\end{sphinxtheindex}
