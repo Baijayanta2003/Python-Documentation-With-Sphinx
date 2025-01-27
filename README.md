@@ -477,7 +477,16 @@ Also add This in `conf.py` folder.
 extensions.append("sphinx_wagtail_theme")
 html_theme = 'sphinx_wagtail_theme'
 ```
+Also if `you want to display the codes what have been written inside the code ` then just edit the `conf.py` file and add the following:
 
+```
+'sphinx.ext.viewcode',
+```
+in the `extensions` list.
+It will finally look like this:
+```bash
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','sphinx.ext.viewcode']
+```
 
 
 
