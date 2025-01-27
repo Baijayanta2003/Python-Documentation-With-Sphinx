@@ -470,7 +470,7 @@ $ pip install sphinx-wagtail-theme
 ```
 Install it in your Virtual Environment.
 
-##Also add This in `conf.py` folder.
+Also add This in `conf.py` folder.
 
 
 ```bash
