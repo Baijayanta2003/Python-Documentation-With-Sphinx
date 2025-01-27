@@ -491,7 +491,7 @@ You can also add `'sphinx.ext.mathjax'` in the extensions list to support latex 
 
 If you want to make a pdf or latex file you first have to install the `latex` support.
 
-#Latex Or Pdf Support:
+# Latex Or Pdf Support:
 
 First run the following command in the terminal while activating the virtual environment:
 
@@ -513,6 +513,22 @@ make latexpdf
 
 ```
 The PDF will be located in `/docs/build/latex/.`
+
+If you want to make tex file just type:
+
+```bash
+make latex
+```
+-Navigate to the directory
+
+```bash
+cd docs/build/latex/
+```
+-Run:
+```bash
+pdflatex project_name.tex
+```
+where you have a `tex` file in the direcory naming after your project name.
 
 
 
