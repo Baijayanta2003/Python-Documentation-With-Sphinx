@@ -9,7 +9,7 @@ In this I will guide you step by step how to *make* documentation for your pytho
 python -m venv myenv
 
 ```
-You can write thing instead of myenv. This will create a directiory where your virtual environment will be.
+You can give the name for the directory anything instead of myenv. This will create a directiory where your virtual environment will be.
 
 After installing type in command prompt or terminal
 ```bash
@@ -34,23 +34,29 @@ pip install <package_name>
 ```
 install all the packages you need.
 
-4.To deactiavte the virtual environment type
+4.To deactivate the virtual environment type
 ```bash
 deactivate
 ```
 viola you have successfully installed used and exited the virtual environment.
+\\
 
 5.Now get back to work.
 
 Activate the virtual environment myenv by step `2`.
 
 Then navigate to the directory (In my case I have a folder named `Sphinux_Tutorial` where my python scripts are located) 
-where the python scripts are there that you want to make the documentation.
 
-Alternatively you can navigate to that directory first and then activate the virtual environment using this command
+where the python scripts are located for which you want to make the documentation for .
+
+Alternatively you can navigate to that directory first and 
+
+then activate the virtual environment using this command
+
 ```bash
 source directory_link/myenv/bin/activate
 ```
+
 `directory_link` is the directory where you have installed the environment.
 
 6.Install the `Sphinx` with this command:
@@ -200,7 +206,7 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
                                
 ```
-Press `esc` `a` to edit.
+Press `a` or `i` to edit.
 In this cut the `extensions = []` and paste:
 
 ```bash 
@@ -297,7 +303,7 @@ documentation for details.
    
 
 ```
-Press `esc` `a ` to edit.
+Press `a` or `i` to edit.
 Type `modules` at the end like this:
 ```bash
 .. toctree::
@@ -321,7 +327,7 @@ The following text will appear:
 ```bash
 Running Sphinx v7.4.7
 loading translations [English]... not available for built-in messages
-/Users/baijayantabhattacharyya/myenv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+/myenv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
   warnings.warn(
 loading pickled environment... done
 building [mo]: targets for 0 po files that are out of date
@@ -414,7 +420,7 @@ Final Indexing is:
 ├── multiply.py
 └── subtract.py
 ```
-You can change theme in the `conf.py` file in the `source folder`.I defaultly use themee `nature`.
+You can change theme of your html file in the `conf.py` file in the `source folder`.I defaultly use theme `nature`.
 
 
 
