@@ -420,9 +420,19 @@ Final Indexing is:
 ├── multiply.py
 └── subtract.py
 ```
-You can change theme of your html file in the `conf.py` file in the `source folder`.I defaultly use theme `nature`.
+You can change theme of your html file in the `conf.py` file in the `source folder`.I use the theme `wagtail` which can be installed by:
+```bash
+$ pip install sphinx-wagtail-theme
+```
+Install it in your Virtual Environment.
+
+##Also add This in `conf.py` folder.
 
 
+```bash
+extensions.append("sphinx_wagtail_theme")
+html_theme = 'sphinx_wagtail_theme'
+```
 
 
 
