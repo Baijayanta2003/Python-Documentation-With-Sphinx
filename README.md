@@ -487,7 +487,7 @@ It will finally look like this:
 ```bash
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','sphinx.ext.viewcode']
 ```
-
+You can also add `'sphinx.ext.mathjax'` in the extensions list to support latex math equations.
 
 
 
