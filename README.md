@@ -66,7 +66,7 @@ pip install sphinx
 
 ```
 7.My working directory looks like this:
-```bash
+```python
 Sphinx_Tutorial/
 
 ```
@@ -74,7 +74,7 @@ Sphinx_Tutorial/
 My case Files are `add.py`,`subtract.py`,`multiply.py`.
 After this my directory structure is:
 
-```bash
+```python
 Sphinx_Tutorial/
 ├── add.py
 ├── multiply.py
@@ -96,7 +96,7 @@ cd docs
 sphinx-quickstart
 ```
 After enter it will show something like this:
-```
+```python
 Welcome to the Sphinx 7.4.7 quickstart utility.
 
 Please enter values for the following settings (just press Enter to
@@ -113,7 +113,7 @@ Either, you use a directory "_build" within the root path, or you separate
 `Type y`
 
 12.It will look like this:
-```
+```python
 > Separate source and build directories (y/n) [n]: y
 
 The project name will occur in several places in the built documentation.
@@ -122,13 +122,13 @@ The project name will occur in several places in the built documentation.
 ```
 13.Type The name of the project you wanna give,In my case it is `Documenting Python Code with Sphinux`.
 After that it will look something like this:
-```
+```python
 The project name will occur in several places in the built documentation.
 > Project name: Documenting Python Code with Sphinux
 > Author name(s):
 ```
 14.Type The Author name,Do the next commands and then it will look like this:
- ```
+ ```python
 > Author name(s): Baijaynta Bhattacharyya
 > Project release []: '0.0.1'
 
@@ -153,7 +153,7 @@ source files. Use the Makefile to build the docs, like so:
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 ```
 15.Now the directory looks like:
-```bash
+```python
 Sphinx_Tutorial/
 ├── add.py
 ├── docs
@@ -176,7 +176,7 @@ cd source/
 vi conf.py
 ```
 17.This will look like this:
-```bash
+```python
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -214,20 +214,20 @@ In this cut the `extensions = []` and paste:
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon']
 ```
 and also after the line:
-```bash
+```python
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 ```
 type:
-```
+```python
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../'))  # Adjust the path if needed
 
 ```
 19.Finally it will look like this:
-```bash
+```python
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -284,7 +284,7 @@ type
 vi index.rst
 ```
 And this will look like
-```bash
+```python
 .. Documenting Python Code with Sphinux documentation master file, created by
    sphinx-quickstart on Mon Jan 27 15:39:35 2025.
    You can adapt this file completely to your liking, but it should at least
@@ -325,7 +325,7 @@ make html
 
 ````
 21.The following text will appear:
-```bash
+```python
 Running Sphinx v7.4.7
 loading translations [English]... not available for built-in messages
 /myenv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
@@ -365,7 +365,7 @@ open index.html
 ```
 23.You will see a html file opening in your default browser.
 Final Indexing is:
-```bash
+```python
 ├── .DS_Store
 ├── add.py
 ├── docs
