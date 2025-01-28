@@ -495,16 +495,16 @@ If you want to make a pdf or latex file you first have to install the `latex` su
 
 First run the following command in the terminal while activating the virtual environment:
 
--for linux users type:
+- for linux users type:
 ```bash
 sudo apt-get install texlive-full
 ```
--for macos users type:
+- for macos users type:
 ```bash
 brew install --cask mactex
 
 ```
--for Windows users Download and install MiKTeX or TeX Live.
+- for Windows users Download and install MiKTeX or TeX Live.
 # Now
 Run this command in the `docs` folder:
 ```bash
