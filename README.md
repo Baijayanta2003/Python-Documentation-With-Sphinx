@@ -602,7 +602,14 @@ open build/latex/MyProject.pdf
 
 
 ```
+`Save it in a Bash script file` give name say `sphinx.sh`.This should be in a folder in which your codes are located.
+Run:
+```bash
+chmod +x ./sphinx.sh
+./sphinx.sh
 
+```
+After successful run it will open up pdf and html files.But make sure you have first actiavted the vitual environment.
 ## That's it.This is all you need 
 
 
