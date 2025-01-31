@@ -609,7 +609,7 @@ chmod +x ./sphinx.sh
 ./sphinx.sh
 
 ```
-After successful run it will open up pdf and html files.But make sure you have first actiavted the vitual environment.
+After successful run it will open up pdf and html files.But make sure you have first activated the vitual environment.
 ## That's it.This is all you need 
 ## Summary
 - First Activate the Virtual Environment
