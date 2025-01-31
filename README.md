@@ -487,7 +487,18 @@ It will finally look like this:
 ```bash
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','sphinx.ext.viewcode']
 ```
-You can also add `'sphinx.ext.mathjax'` in the extensions list to support latex math equations.
+You can also add `'sphinx.ext.mathjax'` in the extensions list to support latex math equations in the `html` file.But to do that in the `latex file` do the following:
+Edit the conf.py and add in the `extensions` list
+```python
+    "sphinx.ext.imgmath",  # For LaTeX PDF rendering
+
+
+latex_engine = "pdflatex"  # Or 'xelatex', 'lualatex'
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize': '12pt',
+}
+```
 
 If you want to make a pdf or latex file you first have to install the `latex` support.
 
@@ -529,7 +540,6 @@ cd docs/build/latex/
 pdflatex project_name.tex
 ```
 where you have a `tex` file in the direcory naming after your project name.
-
 
 
 
