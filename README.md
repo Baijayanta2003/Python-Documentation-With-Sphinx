@@ -611,7 +611,13 @@ chmod +x ./sphinx.sh
 ```
 After successful run it will open up pdf and html files.But make sure you have first actiavted the vitual environment.
 ## That's it.This is all you need 
-
+## Summary
+- First Activate the Virtual Environment
+- Install sphinx using `pip install sphinx`
+- Install texlive if you want latex suport `sudo apt-get install texlive-full` or `brew install --cask mactex`
+- Navigate to your directory where your python scripts are.
+- Run the `Bash` Script there . You can edit the projectname,authorname etc in the `docs/source/conf.py` file.
+  
 
 
 
