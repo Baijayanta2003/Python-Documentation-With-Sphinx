@@ -60,7 +60,7 @@ latex_elements = {
 	\usepackage{amssymb}
 	\usepackage{fancyhdr}
 	\pagestyle{fancy}
-
+	
 	% Clear the current header and footer settings
 	\fancyhf{}
 
@@ -73,7 +73,7 @@ latex_elements = {
     """
     
 }
-latex_domain_indices = False #true is you want the python module indices
+latex_domain_indices = False  #true is you want the python module indices
 # TEX Configuration
 # Enable MathJax for LaTeX equations with dollar signs (\$...\$)
 mathjax_config = {
