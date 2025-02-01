@@ -550,15 +550,15 @@ where you have a `tex` file in the direcory naming after your project name.
 
 PROJECT_NAME="MyProject" #Put your project name
 AUTHOR_NAME="MyAuthor" #Put your Author names
-VERSION="" #Put the version
+VERSION="0.0.1" #Put the version
 LANGUAGE="en" #Put the language
 
-#Create Documentation Directories
-if [-d docs]; then
-	rm -rf docs
-else 
-	mkdir docs	
+# Create Documentation Directories
+if [ -d docs ]; then
+    rm -rf docs
 fi
+
+mkdir docs
 
 cd docs
 
@@ -568,7 +568,7 @@ sphinx-quickstart  <<EOT
 y
 $PROJECT_NAME
 $AUTHOR_NAME
-
+$VERSION
 $LANGUAGE
 EOT
 
@@ -577,42 +577,44 @@ cd source
 
 # Append additional configurations to conf.py
 
-cat<<EOT >> conf.py
+cat <<EOF >> conf.py
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../'))  # Adjust the path if needed
 
 extensions = [
-	'sphinx.ext.autodoc', 
-	'sphinx.ext.napoleon',
-	'sphinx.ext.viewcode',
-	"sphinx.ext.imgmath",
-	"sphinx.ext.mathjax"
+    'sphinx.ext.autodoc', 
+    'sphinx.ext.napoleon',
+    'sphinx.ext.viewcode',
+    "sphinx.ext.imgmath",
+    "sphinx.ext.mathjax"
 ]
 
 latex_engine = "pdflatex"  # Or 'xelatex', 'lualatex'
 
 latex_elements = {
-	"papersize": "a4paper",
-	'printindex': '',
-	'classoptions': ',oneside',
-        'extraclassoptions': 'openany',
-     	"pointsize": "14pt",
-    	"preamble": r"""
-		\usepackage{palatino}  
-		\usepackage{fvextra}  % Better verbatim environments
-		\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
-	"""
+    "papersize": "a4paper",
+    'printindex': '',
+    'classoptions': ',oneside',
+    'extraclassoptions': 'openany',
+    "pointsize": "14pt",
+    "preamble": r"""
+        \usepackage{palatino}  
+        \usepackage{fvextra}  % Better verbatim environments
+    """
 }
-#TEX Configuration
+# TEX Configuration
+
+# Enable MathJax for LaTeX equations with dollar signs (\$...\$)
 mathjax_config = {
     "tex": {
-        "inlineMath": [["$", "$"], ["\\(", "\\)"]],
-        "displayMath": [["$$", "$$"], ["\\[", "\\]"]]
+        "inlineMath": [["\\$", "\\$"], ["\\\\(", "\\\\)"]],
+        "displayMath": [["\\$\\$", "\\$\\$"], ["\\\\[", "\\\\]"]]
     }
 }
+
 pygments_style = "sphinx"  # Syntax highlighting style
-EOT
+EOF
 
 # Go back to docs directory
 cd ..
@@ -626,11 +628,12 @@ echo '   modules' >> source/index.rst
 # Build documentation in multiple formats
 make html 
 make latex
-make pdflatex
+make latexpdf
 
 echo "Documentation successfully generated!"
 open build/html/index.html
-open build/latex/${PROJECT_NAME}.pdf 
+open build/latex/$PROJECT_NAME.pdf 
+
 
 ```
 `Save it in a Bash script file` give name say `sphinx.sh`.This should be in a folder in which your codes are located.
