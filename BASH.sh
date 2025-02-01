@@ -49,19 +49,31 @@ latex_elements = {
     'fontpkg': r'''
         \usepackage{palatino}
     ''',
-    'printindex': '',
+	
     'classoptions': ',oneside',
     'extraclassoptions': 'openany',
     "pointsize": "14pt",
     "preamble": r"""
         \usepackage{palatino} 
-	\usepackage{amsmath,amssymb}
-	 
+	\usepackage{amsmath}
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{fancyhdr}
+	\pagestyle{fancy}
+
+	% Clear the current header and footer settings
+	\fancyhf{}
+
+	% Set section name in the upper right corner
+	\fancyhead[R]{\leftmark}  % Section name (leftmark) in the upper right
+
+	% Set page number in the footer
+	\fancyfoot[C]{\thepage} 
         \usepackage{fvextra}  % Better verbatim environments
     """
     
 }
-
+latex_domain_indices = False #true is you want the python module indices
 # TEX Configuration
 # Enable MathJax for LaTeX equations with dollar signs (\$...\$)
 mathjax_config = {
