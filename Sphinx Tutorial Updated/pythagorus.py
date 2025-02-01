@@ -17,31 +17,42 @@ def area_of_circle(radius):
     """
     import math
     return math.pi * radius ** 2
-
-def velocity(distance, time):
+def energy(mass, c):
     """
-    Computes velocity using the equation:
+    Computes energy using Einstein's equation:
 
     .. math::
+        E=mc^2
 
-        v =\\frac{d}{t}
+    where:
+    - :math:`E` is energy,
+    - :math:`m` is mass,
+    - :math:`c`    is the speed of light.
 
-    Parameters
-    ----------
-    distance : float
-        Distance traveled (:math:`d`).
-    time : float
-        Time taken (:math:`t`).
-
-    Returns
-    -------
-    float
-        Computed velocity (:math:`v`).
+    :param mass: The mass of the object.
+    :param c: The speed of light.
+    :return: The computed energy.
     """
-    return distance / time
+    def force(mass, acceleration):
+    """
+    Computes force using Newton's Second Law:
+    .. math::
+    F = m \\cdot a
+
+    where:
+    - :math:`F` is the force,
+    - :math:`m` is the mass,
+    - :math:`a` is the acceleration.
+
+    :param mass: The object's mass.
+    :param acceleration: The object's acceleration.
+    :return: The computed force.
+    """
+    return mass * acceleration
 
 
-def kinetic_energy(mass, velocity):
+    return mass * c**2
+    def kinetic_energy(mass, velocity):
     """
     Computes kinetic energy using the formula:
 
@@ -75,37 +86,28 @@ def pythagoras(a, b):
     """
     import math
     return math.sqrt(a**2 + b**2)
-def force(mass, acceleration):
+def velocity(distance, time):
     """
-    Computes force using Newton's Second Law:
-    .. math::
-    F = m \\cdot a
-
-    where:
-    - :math:`F` is the force,
-    - :math:`m` is the mass,
-    - :math:`a` is the acceleration.
-
-    :param mass: The object's mass.
-    :param acceleration: The object's acceleration.
-    :return: The computed force.
-    """
-    return mass * acceleration
-
-def energy(mass, c):
-    """
-    Computes energy using Einstein's equation:
+    Computes velocity using the equation:
 
     .. math::
-        E=mc^2
 
-    where:
-    - :math:`E` is energy,
-    - :math:`m` is mass,
-    - :math:`c`    is the speed of light.
+        v =\\frac{d}{t}
 
-    :param mass: The mass of the object.
-    :param c: The speed of light.
-    :return: The computed energy.
+    Parameters
+    ----------
+    distance : float
+        Distance traveled (:math:`d`).
+    time : float
+        Time taken (:math:`t`).
+
+    Returns
+    -------
+    float
+        Computed velocity (:math:`v`).
     """
-    return mass * c**2
+    return distance / time
+
+
+
+
