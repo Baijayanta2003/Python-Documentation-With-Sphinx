@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>newtest module &#8212; MyProject 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pythagorus module" href="pythagorus.html" />
+    <link rel="prev" title="add module" href="add.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-newtest">
+<span id="newtest-module"></span><h1>newtest module<a class="headerlink" href="#module-newtest" title="Link to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="newtest.area_of_ellipse">
+<span class="sig-prename descclassname"><span class="pre">newtest.</span></span><span class="sig-name descname"><span class="pre">area_of_ellipse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newtest.html#area_of_ellipse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newtest.area_of_ellipse" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the area of an ellipse:</p>
+<div class="math">
+<p><img src="_images/math/79a141036f6b3106de751ab0a447649daab6dbaf.png" alt="A = \pi a b"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/211284f68205c3e66773eaf026f32a0acdd3dfb3.png" alt="A"/> is the area,
+- <img class="math" src="_images/math/b3e65e3b6408fcfa00452530b73f55d1755f9965.png" alt="a"/> is the semi-major axis,
+- <img class="math" src="_images/math/68c7c8c65602677ab56cf7fd88002023f0edc575.png" alt="b"/> is the semi-minor axis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – The semi-major axis length.</p></li>
+<li><p><strong>b</strong> – The semi-minor axis length.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The area of the ellipse.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="newtest.fibonacci">
+<span class="sig-prename descclassname"><span class="pre">newtest.</span></span><span class="sig-name descname"><span class="pre">fibonacci</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newtest.html#fibonacci"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newtest.fibonacci" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the nth Fibonacci number using Binet’s formula:</p>
+<div class="math">
+<p><img src="_images/math/25342a0ec2dd9261e317c806a88dcdb9340c2ba7.png" alt="F_n = \frac{1}{\sqrt{5}} \left( \left( \frac{1 + \sqrt{5}}{2} \right)^n - \left( \frac{1 - \sqrt{5}}{2} \right)^n \right)"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/7e5062a83a78f9dbf5931d241fe87ac860b6c506.png" alt="F_n"/> is the nth Fibonacci number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>n</strong> – The index of the Fibonacci sequence.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nth Fibonacci number.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="newtest.logistic_growth">
+<span class="sig-prename descclassname"><span class="pre">newtest.</span></span><span class="sig-name descname"><span class="pre">logistic_growth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newtest.html#logistic_growth"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newtest.logistic_growth" title="Link to this definition">¶</a></dt>
+<dd><p>Models the population growth according to the logistic growth model:</p>
+<div class="math">
+<p><img src="_images/math/73efdf71351f6462e655196da4af406bc46e8543.png" alt="P(t) = \frac{K P_0}{P_0 + (K - P_0) e^{-rt}}"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/a3c7182ec35f01796a900808cbb5ad618d1d18e0.png" alt="P(t)"/> is the population at time <img class="math" src="_images/math/907a4add6d5db5b7f197f7924f1371b8ac404fe6.png" alt="t"/>,
+- <img class="math" src="_images/math/a2a080be6dfb0788804710115faf8088371f00f0.png" alt="P_0"/> is the initial population,
+- <img class="math" src="_images/math/79a3d439d28652c547386f39b555d90d3aaf102d.png" alt="r"/> is the growth rate,
+- <img class="math" src="_images/math/52ddc0cde6d632f631533173562fe3ca375b1f32.png" alt="K"/> is the carrying capacity of the environment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>P0</strong> – Initial population size.</p></li>
+<li><p><strong>r</strong> – Growth rate.</p></li>
+<li><p><strong>t</strong> – Time at which to evaluate the population.</p></li>
+<li><p><strong>K</strong> – Carrying capacity.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The population at time <img class="math" src="_images/math/907a4add6d5db5b7f197f7924f1371b8ac404fe6.png" alt="t"/>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="newtest.logistic_map">
+<span class="sig-prename descclassname"><span class="pre">newtest.</span></span><span class="sig-name descname"><span class="pre">logistic_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newtest.html#logistic_map"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newtest.logistic_map" title="Link to this definition">¶</a></dt>
+<dd><p>Simulates the logistic map:</p>
+<div class="math">
+<p><img src="_images/math/00b9187146b2b94a4ba5e6e0ad50a7ce4fba1578.png" alt="x_{n+1} = r x_n (1 - x_n)"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/5685317665034d2e1b14023cf1bb086affaa5d21.png" alt="x_{n+1}"/> is the population at the next time step,
+- <img class="math" src="_images/math/08dfd7399e8e2f0a9715c6f9a13a55d8a368a038.png" alt="x_n"/> is the population at the current time step,
+- <img class="math" src="_images/math/79a3d439d28652c547386f39b555d90d3aaf102d.png" alt="r"/> is the growth rate.</p>
+<p>This is often used to model chaotic systems.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x0</strong> – Initial population size.</p></li>
+<li><p><strong>r</strong> – Growth rate parameter.</p></li>
+<li><p><strong>n</strong> – Number of iterations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The population after n iterations.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="newtest.pendulum_period">
+<span class="sig-prename descclassname"><span class="pre">newtest.</span></span><span class="sig-name descname"><span class="pre">pendulum_period</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9.81</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newtest.html#pendulum_period"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newtest.pendulum_period" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the period of a simple pendulum:</p>
+<div class="math">
+<p><img src="_images/math/156eb091ab1cded78c1e81c22e8ac946bd80ec9d.png" alt="T = 2 \pi \sqrt{\frac{l}{g}}"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/e8dea8254118f111b5fb20895b03528c17566f06.png" alt="T"/> is the period,
+- <img class="math" src="_images/math/470aa65888a2971c9346e573f12b37ea406b8ec9.png" alt="l"/> is the length of the pendulum,
+- <img class="math" src="_images/math/157ba5711de84b4c715a0478fd8ae440e596d96e.png" alt="g"/> is the acceleration due to gravity (default value is 9.81 m/s²).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> – The length of the pendulum.</p></li>
+<li><p><strong>g</strong> – The gravitational acceleration (default is 9.81 m/s²).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The period of the pendulum.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="newtest.quadratic_formula">
+<span class="sig-prename descclassname"><span class="pre">newtest.</span></span><span class="sig-name descname"><span class="pre">quadratic_formula</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newtest.html#quadratic_formula"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newtest.quadratic_formula" title="Link to this definition">¶</a></dt>
+<dd><p>Solves the quadratic equation:</p>
+<div class="math">
+<p><img src="_images/math/e750f33c75d71d251ce231c7a92c2e8963d856f0.png" alt="ax^2 + bx + c = 0"/></p>
+</div><p>Using the quadratic formula:</p>
+<div class="math">
+<p><img src="_images/math/3c47f618899aeda020f7c5e8ee1d86f99e993f04.png" alt="x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/b3e65e3b6408fcfa00452530b73f55d1755f9965.png" alt="a"/>, <img class="math" src="_images/math/68c7c8c65602677ab56cf7fd88002023f0edc575.png" alt="b"/>, and <img class="math" src="_images/math/d520a12f1579170834c32ad5f656de081bbb36fe.png" alt="c"/> are the coefficients of the quadratic equation.
+- <img class="math" src="_images/math/888f7c323ac0341871e867220ae2d76467d74d6e.png" alt="x"/> is the solution to the equation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – Coefficient of x^2.</p></li>
+<li><p><strong>b</strong> – Coefficient of x.</p></li>
+<li><p><strong>c</strong> – Constant term.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the two solutions for x.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple of floats</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="newtest.sum_of_squares">
+<span class="sig-prename descclassname"><span class="pre">newtest.</span></span><span class="sig-name descname"><span class="pre">sum_of_squares</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/newtest.html#sum_of_squares"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#newtest.sum_of_squares" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the sum of squares of the first <img class="math" src="_images/math/5a939c5280da7202ca4531f175a7780ad5e1f80a.png" alt="n"/> integers:</p>
+<div class="math">
+<p><img src="_images/math/3426aea75aa06c972f7d43aa4a4aca32685ef05f.png" alt="S = 1^2 + 2^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/b988975be41fd13b4d091c10202ba19374643586.png" alt="S"/> is the sum of squares.
+- <img class="math" src="_images/math/5a939c5280da7202ca4531f175a7780ad5e1f80a.png" alt="n"/> is the number of terms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>n</strong> – The number of terms to sum.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The sum of squares.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MyProject</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Sphinx Tutorial Updated</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="add.html">add module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">newtest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythagorus.html">pythagorus module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subtract.html">subtract module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">Sphinx Tutorial Updated</a><ul>
+      <li>Previous: <a href="add.html" title="previous chapter">add module</a></li>
+      <li>Next: <a href="pythagorus.html" title="next chapter">pythagorus module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, MyAuthor.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/newtest.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

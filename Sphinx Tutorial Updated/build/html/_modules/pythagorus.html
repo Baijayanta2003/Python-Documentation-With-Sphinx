@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pythagorus &#8212; MyProject 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pythagorus</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="area_of_circle">
+<a class="viewcode-back" href="../pythagorus.html#pythagorus.area_of_circle">[docs]</a>
+<span></span><span class="k">def</span><span class="w"> </span><span class="nf">area_of_circle</span><span class="p">(</span><span class="n">radius</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute the area of a circle.</span>
+
+<span class="sd">    The formula is given by:</span>
+
+<span class="sd">    .. math:: A = \pi r^2</span>
+
+<span class="sd">    where:</span>
+<span class="sd">    - :math:`A` is the area,</span>
+<span class="sd">    - :math:`r` is the radius.</span>
+
+<span class="sd">    :param radius: The radius of the circle.</span>
+<span class="sd">    :type radius: float</span>
+<span class="sd">    :return: The computed area.</span>
+<span class="sd">    :rtype: float</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span></div>
+
+
+<div class="viewcode-block" id="velocity">
+<a class="viewcode-back" href="../pythagorus.html#pythagorus.velocity">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">velocity</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes velocity using the equation:</span>
+
+<span class="sd">    .. math::</span>
+
+<span class="sd">        v =\\frac{d}{t}</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    distance : float</span>
+<span class="sd">        Distance traveled (:math:`d`).</span>
+<span class="sd">    time : float</span>
+<span class="sd">        Time taken (:math:`t`).</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Computed velocity (:math:`v`).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">distance</span> <span class="o">/</span> <span class="n">time</span></div>
+
+
+
+<div class="viewcode-block" id="kinetic_energy">
+<a class="viewcode-back" href="../pythagorus.html#pythagorus.kinetic_energy">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">kinetic_energy</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">velocity</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes kinetic energy using the formula:</span>
+
+<span class="sd">    .. math::</span>
+
+<span class="sd">        KE = \\frac{1}{2} m v^2</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        mass (float): The object&#39;s mass (:math:`m`).</span>
+<span class="sd">        velocity (float): The object&#39;s velocity (:math:`v`).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        float: The kinetic energy (:math:`KE`).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">mass</span> <span class="o">*</span> <span class="n">velocity</span> <span class="o">**</span> <span class="mi">2</span></div>
+
+
+
+
+<div class="viewcode-block" id="pythagoras">
+<a class="viewcode-back" href="../pythagorus.html#pythagorus.pythagoras">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">pythagoras</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes the hypotenuse using the Pythagorean theorem:</span>
+<span class="sd">     .. math::</span>
+
+<span class="sd">        c^2=a^2+b^2</span>
+<span class="sd">    </span>
+<span class="sd">      (a+b)^2=a^2+2ab+b^2</span>
+
+<span class="sd">    :param a: Side A length.</span>
+<span class="sd">    :param b: Side B length.</span>
+<span class="sd">    :return: Hypotenuse length.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="force">
+<a class="viewcode-back" href="../pythagorus.html#pythagorus.force">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">force</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">acceleration</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes force using Newton&#39;s Second Law:</span>
+<span class="sd">    .. math::</span>
+<span class="sd">    F = m \\cdot a</span>
+
+<span class="sd">    where:</span>
+<span class="sd">    - :math:`F` is the force,</span>
+<span class="sd">    - :math:`m` is the mass,</span>
+<span class="sd">    - :math:`a` is the acceleration.</span>
+
+<span class="sd">    :param mass: The object&#39;s mass.</span>
+<span class="sd">    :param acceleration: The object&#39;s acceleration.</span>
+<span class="sd">    :return: The computed force.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">mass</span> <span class="o">*</span> <span class="n">acceleration</span></div>
+
+
+<div class="viewcode-block" id="energy">
+<a class="viewcode-back" href="../pythagorus.html#pythagorus.energy">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">energy</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes energy using Einstein&#39;s equation:</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        E=mc^2</span>
+
+<span class="sd">    where:</span>
+<span class="sd">    - :math:`E` is energy,</span>
+<span class="sd">    - :math:`m` is mass,</span>
+<span class="sd">    - :math:`c`    is the speed of light.</span>
+
+<span class="sd">    :param mass: The mass of the object.</span>
+<span class="sd">    :param c: The speed of light.</span>
+<span class="sd">    :return: The computed energy.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">mass</span> <span class="o">*</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span></div>
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">MyProject</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Sphinx Tutorial Updated</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, MyAuthor.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

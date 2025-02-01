@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>pythagorus module &#8212; MyProject 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="subtract module" href="subtract.html" />
+    <link rel="prev" title="newtest module" href="newtest.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-pythagorus">
+<span id="pythagorus-module"></span><h1>pythagorus module<a class="headerlink" href="#module-pythagorus" title="Link to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="pythagorus.area_of_circle">
+<span class="sig-prename descclassname"><span class="pre">pythagorus.</span></span><span class="sig-name descname"><span class="pre">area_of_circle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pythagorus.html#area_of_circle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pythagorus.area_of_circle" title="Link to this definition">¶</a></dt>
+<dd><p>Compute the area of a circle.</p>
+<p>The formula is given by:</p>
+<div class="math">
+<p><img src="_images/math/b2f481b8e78077a02a7898a228a6e9287864dbbd.png" alt="A = \pi r^2"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/211284f68205c3e66773eaf026f32a0acdd3dfb3.png" alt="A"/> is the area,
+- <img class="math" src="_images/math/79a3d439d28652c547386f39b555d90d3aaf102d.png" alt="r"/> is the radius.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>radius</strong> (<em>float</em>) – The radius of the circle.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The computed area.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pythagorus.energy">
+<span class="sig-prename descclassname"><span class="pre">pythagorus.</span></span><span class="sig-name descname"><span class="pre">energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pythagorus.html#energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pythagorus.energy" title="Link to this definition">¶</a></dt>
+<dd><p>Computes energy using Einstein’s equation:</p>
+<div class="math">
+<p><img src="_images/math/28220a3d35ed5b88792810f957868167d30d11c3.png" alt="E=mc^2"/></p>
+</div><p>where:
+- <img class="math" src="_images/math/1815f600df7845409443aed470eac2d449e4ddb0.png" alt="E"/> is energy,
+- <img class="math" src="_images/math/e9bc7da808d33a16a8347f27a519bd067186aa66.png" alt="m"/> is mass,
+- <img class="math" src="_images/math/d520a12f1579170834c32ad5f656de081bbb36fe.png" alt="c"/>    is the speed of light.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mass</strong> – The mass of the object.</p></li>
+<li><p><strong>c</strong> – The speed of light.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The computed energy.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pythagorus.force">
+<span class="sig-prename descclassname"><span class="pre">pythagorus.</span></span><span class="sig-name descname"><span class="pre">force</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acceleration</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pythagorus.html#force"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pythagorus.force" title="Link to this definition">¶</a></dt>
+<dd><p>Computes force using Newton’s Second Law:
+.. math::
+F = m cdot a</p>
+<p>where:
+- <img class="math" src="_images/math/df00656702b70b4b6f7ffbf6a9aa9a334bab1914.png" alt="F"/> is the force,
+- <img class="math" src="_images/math/e9bc7da808d33a16a8347f27a519bd067186aa66.png" alt="m"/> is the mass,
+- <img class="math" src="_images/math/b3e65e3b6408fcfa00452530b73f55d1755f9965.png" alt="a"/> is the acceleration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mass</strong> – The object’s mass.</p></li>
+<li><p><strong>acceleration</strong> – The object’s acceleration.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The computed force.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pythagorus.kinetic_energy">
+<span class="sig-prename descclassname"><span class="pre">pythagorus.</span></span><span class="sig-name descname"><span class="pre">kinetic_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">velocity</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pythagorus.html#kinetic_energy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pythagorus.kinetic_energy" title="Link to this definition">¶</a></dt>
+<dd><p>Computes kinetic energy using the formula:</p>
+<div class="math">
+<p><img src="_images/math/b636468c209dbf3a8265b1486c81487c7d14236b.png" alt="KE = \frac{1}{2} m v^2"/></p>
+</div><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mass</strong> (<em>float</em>) – The object’s mass (<img class="math" src="_images/math/e9bc7da808d33a16a8347f27a519bd067186aa66.png" alt="m"/>).</p></li>
+<li><p><strong>velocity</strong> (<em>float</em>) – The object’s velocity (<img class="math" src="_images/math/02d98909b5d6acd6a7ff927d4d42790bdd407d58.png" alt="v"/>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The kinetic energy (<img class="math" src="_images/math/07bfb756d50698e210a3d80d10c860b22fcda90b.png" alt="KE"/>).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pythagorus.pythagoras">
+<span class="sig-prename descclassname"><span class="pre">pythagorus.</span></span><span class="sig-name descname"><span class="pre">pythagoras</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pythagorus.html#pythagoras"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pythagorus.pythagoras" title="Link to this definition">¶</a></dt>
+<dd><dl>
+<dt>Computes the hypotenuse using the Pythagorean theorem:</dt><dd><div class="math">
+<p><img src="_images/math/8c1215068b311d566be9643e25902190e50ddb2c.png" alt="c^2=a^2+b^2
+
+(a+b)^2=a^2+2ab+b^2"/></p>
+</div></dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – Side A length.</p></li>
+<li><p><strong>b</strong> – Side B length.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Hypotenuse length.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pythagorus.velocity">
+<span class="sig-prename descclassname"><span class="pre">pythagorus.</span></span><span class="sig-name descname"><span class="pre">velocity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pythagorus.html#velocity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pythagorus.velocity" title="Link to this definition">¶</a></dt>
+<dd><p>Computes velocity using the equation:</p>
+<div class="math">
+<p><img src="_images/math/5ca34b62c10f4bb30798abd8f8a5868ef7da7c45.png" alt="v =\frac{d}{t}"/></p>
+</div><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>distance</strong> (<em>float</em>) – Distance traveled (<img class="math" src="_images/math/badad346f6fbe2e237af99bfbd9a93a4da53a3da.png" alt="d"/>).</p></li>
+<li><p><strong>time</strong> (<em>float</em>) – Time taken (<img class="math" src="_images/math/907a4add6d5db5b7f197f7924f1371b8ac404fe6.png" alt="t"/>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Computed velocity (<img class="math" src="_images/math/02d98909b5d6acd6a7ff927d4d42790bdd407d58.png" alt="v"/>).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MyProject</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Sphinx Tutorial Updated</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="add.html">add module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newtest.html">newtest module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pythagorus module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subtract.html">subtract module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">Sphinx Tutorial Updated</a><ul>
+      <li>Previous: <a href="newtest.html" title="previous chapter">newtest module</a></li>
+      <li>Next: <a href="subtract.html" title="next chapter">subtract module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, MyAuthor.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/pythagorus.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
