@@ -625,8 +625,8 @@ echo '   modules' >> source/index.rst
 
 # Build documentation in multiple formats
 make html 
-Make latex
-make latexpdf
+make latex
+make pdflatex
 
 echo "Documentation successfully generated!"
 open build/html/index.html
