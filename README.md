@@ -552,17 +552,17 @@ cd docs #this will be the directory where you will be all the rst files
 #Your name instead of MyAuthor
 #version is blank here
 #you can also edit this things in conf.py 
-sphinx-quickstart  <<EOF
+sphinx-quickstart  <<EOT
 y 
 MyProject
 MyAuthor
 
 en
-EOF
+EOT
 #change directory
 cd source
 #edit the conf.py file
-cat<<EOF >> conf.py
+cat<<EOT >> conf.py
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../'))  # Adjust the path if needed
@@ -578,17 +578,23 @@ latex_elements = {"papersize": "a4paper",
 \usepackage{fvextra}  % Better verbatim environments
 """
 }
+mathjax_config = {
+    "tex": {
+        "inlineMath": [["$", "$"], ["\\(", "\\)"]],
+        "displayMath": [["$$", "$$"], ["\\[", "\\]"]]
+    }
+}
 
 pygments_style = "sphinx"  # Syntax highlighting style
-EOF
+EOT
 cd ..
 
 #Create the rst files
 sphinx-apidoc -o source/ ../ --force 
 cd source
-cat<<EOF>> index.rst
+cat<<EOT>> index.rst
    modules
-EOF
+EOT
 cd ..
 #make html or latex files
 make html
