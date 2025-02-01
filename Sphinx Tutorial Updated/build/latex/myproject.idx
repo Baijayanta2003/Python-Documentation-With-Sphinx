@@ -1,0 +1,23 @@
+\indexentry{module@\spxentry{module}!add@\spxentry{add}|hyperpage}{2}
+\indexentry{add@\spxentry{add}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{add() (in module add)@\spxentry{add()}\spxextra{in module add}|hyperpage}{2}
+\indexentry{module@\spxentry{module}!newtest@\spxentry{newtest}|hyperpage}{2}
+\indexentry{newtest@\spxentry{newtest}!module@\spxentry{module}|hyperpage}{2}
+\indexentry{area\_of\_ellipse() (in module newtest)@\spxentry{area\_of\_ellipse()}\spxextra{in module newtest}|hyperpage}{2}
+\indexentry{fibonacci() (in module newtest)@\spxentry{fibonacci()}\spxextra{in module newtest}|hyperpage}{2}
+\indexentry{logistic\_growth() (in module newtest)@\spxentry{logistic\_growth()}\spxextra{in module newtest}|hyperpage}{2}
+\indexentry{logistic\_map() (in module newtest)@\spxentry{logistic\_map()}\spxextra{in module newtest}|hyperpage}{3}
+\indexentry{pendulum\_period() (in module newtest)@\spxentry{pendulum\_period()}\spxextra{in module newtest}|hyperpage}{3}
+\indexentry{quadratic\_formula() (in module newtest)@\spxentry{quadratic\_formula()}\spxextra{in module newtest}|hyperpage}{3}
+\indexentry{sum\_of\_squares() (in module newtest)@\spxentry{sum\_of\_squares()}\spxextra{in module newtest}|hyperpage}{4}
+\indexentry{module@\spxentry{module}!pythagorus@\spxentry{pythagorus}|hyperpage}{4}
+\indexentry{pythagorus@\spxentry{pythagorus}!module@\spxentry{module}|hyperpage}{4}
+\indexentry{area\_of\_circle() (in module pythagorus)@\spxentry{area\_of\_circle()}\spxextra{in module pythagorus}|hyperpage}{4}
+\indexentry{energy() (in module pythagorus)@\spxentry{energy()}\spxextra{in module pythagorus}|hyperpage}{4}
+\indexentry{force() (in module pythagorus)@\spxentry{force()}\spxextra{in module pythagorus}|hyperpage}{5}
+\indexentry{kinetic\_energy() (in module pythagorus)@\spxentry{kinetic\_energy()}\spxextra{in module pythagorus}|hyperpage}{5}
+\indexentry{pythagoras() (in module pythagorus)@\spxentry{pythagoras()}\spxextra{in module pythagorus}|hyperpage}{5}
+\indexentry{velocity() (in module pythagorus)@\spxentry{velocity()}\spxextra{in module pythagorus}|hyperpage}{5}
+\indexentry{module@\spxentry{module}!subtract@\spxentry{subtract}|hyperpage}{6}
+\indexentry{subtract@\spxentry{subtract}!module@\spxentry{module}|hyperpage}{6}
+\indexentry{subtract() (in module subtract)@\spxentry{subtract()}\spxextra{in module subtract}|hyperpage}{6}

@@ -1,0 +1,67 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{add}
+    \subitem \spxentry{module}, \hyperpage{2}
+  \item \spxentry{add()}\spxextra{in module add}, \hyperpage{2}
+  \item \spxentry{area\_of\_circle()}\spxextra{in module pythagorus}, \hyperpage{4}
+  \item \spxentry{area\_of\_ellipse()}\spxextra{in module newtest}, \hyperpage{2}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{energy()}\spxextra{in module pythagorus}, \hyperpage{4}
+
+  \indexspace
+  \bigletter F
+  \item \spxentry{fibonacci()}\spxextra{in module newtest}, \hyperpage{2}
+  \item \spxentry{force()}\spxextra{in module pythagorus}, \hyperpage{5}
+
+  \indexspace
+  \bigletter K
+  \item \spxentry{kinetic\_energy()}\spxextra{in module pythagorus}, \hyperpage{5}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{logistic\_growth()}\spxextra{in module newtest}, \hyperpage{2}
+  \item \spxentry{logistic\_map()}\spxextra{in module newtest}, \hyperpage{3}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{module}
+    \subitem \spxentry{add}, \hyperpage{2}
+    \subitem \spxentry{newtest}, \hyperpage{2}
+    \subitem \spxentry{pythagorus}, \hyperpage{4}
+    \subitem \spxentry{subtract}, \hyperpage{6}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{newtest}
+    \subitem \spxentry{module}, \hyperpage{2}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{pendulum\_period()}\spxextra{in module newtest}, \hyperpage{3}
+  \item \spxentry{pythagoras()}\spxextra{in module pythagorus}, \hyperpage{5}
+  \item \spxentry{pythagorus}
+    \subitem \spxentry{module}, \hyperpage{4}
+
+  \indexspace
+  \bigletter Q
+  \item \spxentry{quadratic\_formula()}\spxextra{in module newtest}, \hyperpage{3}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{subtract}
+    \subitem \spxentry{module}, \hyperpage{6}
+  \item \spxentry{subtract()}\spxextra{in module subtract}, \hyperpage{6}
+  \item \spxentry{sum\_of\_squares()}\spxextra{in module newtest}, \hyperpage{4}
+
+  \indexspace
+  \bigletter V
+  \item \spxentry{velocity()}\spxextra{in module pythagorus}, \hyperpage{5}
+
+\end{sphinxtheindex}
