@@ -2,9 +2,9 @@
 
 
 # Define project variables
-PROJECT_NAME="Simulation of MWA Visibilities"  # Put your project name
-AUTHOR_NAME="Baijayanta Bhattacharyya"    # Put your Author names
-VERSION=" "           # Put the version
+PROJECT_NAME="MyProject"  # Put your project name
+AUTHOR_NAME="MyAuthor"    # Put your Author names
+VERSION="0.0.1"           # Put the version
 LANGUAGE="en"             # Put the language
 
 # Create Documentation Directories
@@ -40,8 +40,6 @@ extensions = [
     'sphinx.ext.viewcode',
     "sphinx.ext.imgmath",
     "sphinx.ext.mathjax",
-    "myst_parser",
-    "sphinxcontrib.katex"
 
     
 ]
@@ -50,13 +48,15 @@ latex_engine = "pdflatex"  # Or 'xelatex', 'lualatex'
 
 latex_elements = {
     "papersize": "a4paper",
-      
+    'fontpkg': r'''
+        \usepackage{palatino}
+    ''',
+    
     'classoptions': ',oneside',
     'extraclassoptions': 'openany',
     "pointsize": "14pt",
     "preamble": r"""
-			 \renewcommand{\familydefault}{\sfdefault}
-        \usepackage{times} 
+        \usepackage{palatino} 
         \usepackage{amsmath}
         \usepackage{amsfonts}
         \usepackage{amssymb}
@@ -106,7 +106,7 @@ EOF
 cd ..
 
 # Create the rst files
-sphinx-apidoc -o source/ ../ --force
+sphinx-apidoc -o source/ ../ --force 
 
 
 cat <<EOF > source/index.rst
@@ -114,6 +114,7 @@ cat <<EOF > source/index.rst
    sphinx-quickstart on Sat Feb  1 20:08:52 2025.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+
 
 
 
@@ -125,10 +126,10 @@ cat <<EOF > source/index.rst
 EOF
 
 # Build documentation in multiple formats
-
-#make latex
+make html 
+make latex
 make latexpdf
 
 echo "Documentation successfully generated!"
-
-open build/latex/simulationofmwavisibilities.pdf
+open build/html/index.html
+open build/latex/$PROJECT_NAME.pdf
