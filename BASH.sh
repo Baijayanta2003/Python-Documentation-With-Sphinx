@@ -1,9 +1,10 @@
 #!/bin/bash  
 
+
 # Define project variables
-PROJECT_NAME="MyProject"  # Put your project name
-AUTHOR_NAME="MyAuthor"    # Put your Author names
-VERSION="0.0.1"           # Put the version
+PROJECT_NAME="Simulation of MWA Visibilities"  # Put your project name
+AUTHOR_NAME="Baijayanta Bhattacharyya"    # Put your Author names
+VERSION=" "           # Put the version
 LANGUAGE="en"             # Put the language
 
 # Create Documentation Directories
@@ -38,41 +39,56 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     "sphinx.ext.imgmath",
-    "sphinx.ext.mathjax"
+    "sphinx.ext.mathjax",
+    "myst_parser",
+    "sphinxcontrib.katex"
+
+    
 ]
 
 latex_engine = "pdflatex"  # Or 'xelatex', 'lualatex'
 
 latex_elements = {
     "papersize": "a4paper",
-    'extrapackages': r'\usepackage{fancyhdr}',
-    'fontpkg': r'''
-        \usepackage{palatino}
-    ''',
-	
+      
     'classoptions': ',oneside',
     'extraclassoptions': 'openany',
     "pointsize": "14pt",
     "preamble": r"""
-        \usepackage{palatino} 
-	\usepackage{amsmath}
-	\usepackage{amsfonts}
-	\usepackage{amssymb}
-	\usepackage{fancyhdr}
-	\pagestyle{fancy}
-	
-	% Clear the current header and footer settings
-	\fancyhf{}
+			 \renewcommand{\familydefault}{\sfdefault}
+        \usepackage{times} 
+        \usepackage{amsmath}
+        \usepackage{amsfonts}
+        \usepackage{amssymb}
+        \usepackage{fancyhdr}
+        \usepackage{makeidx}  % To create an index
+        \usepackage{tocloft}  % To customize Table of Contents
 
-	% Set section name in the upper right corner
-	\fancyhead[R]{\leftmark}  % Section name (leftmark) in the upper right
+        % Fancy header and footer
+        \pagestyle{fancy}
+        \fancyhead[L]{\leftmark}
+        \fancyhead[R]{\thepage}
+        \fancyfoot[C]{}
 
-	% Set page number in the footer
-	\fancyfoot[C]{\thepage} 
-        \usepackage{fvextra}  % Better verbatim environments
+        % Table of Contents: Formatting (removing subsections)
+        \setcounter{tocdepth}{0}  % Limit ToC to sections only (remove subsections)
+        \renewcommand{\cftsecfont}{\normalfont\bfseries}  % Bold section titles
+        \renewcommand{\cftsecindent}{0em}                 % No indentation for sections
+        \setlength{\cftbeforesecskip}{0.5ex}              % Space before section titles
+
+        % Index Configuration (simplified to sections only)
+        \makeindex  % Generate index
+
+        % Page layout adjustments
+        \usepackage{geometry}
+        \geometry{top=1in, bottom=1in, left=1in, right=1in}
+
+        % Better verbatim environment for code blocks
+        \usepackage{fvextra}
     """
-    
 }
+
+latex_use_index = True
 latex_domain_indices = False  #true is you want the python module indices
 # TEX Configuration
 # Enable MathJax for LaTeX equations with dollar signs (\$...\$)
@@ -90,16 +106,29 @@ EOF
 cd ..
 
 # Create the rst files
-sphinx-apidoc -o source/ ../ --force 
+sphinx-apidoc -o source/ ../ --force
 
-# Modify index.rst to include modules
-echo '   modules' >> source/index.rst
+
+cat <<EOF > source/index.rst
+.. $PROJECT_NAME documentation master file, created by
+   sphinx-quickstart on Sat Feb  1 20:08:52 2025.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   modules
+EOF
 
 # Build documentation in multiple formats
-make html 
-make latex
+
+#make latex
 make latexpdf
 
 echo "Documentation successfully generated!"
-open build/html/index.html
-open build/latex/$PROJECT_NAME.pdf
+
+open build/latex/simulationofmwavisibilities.pdf
